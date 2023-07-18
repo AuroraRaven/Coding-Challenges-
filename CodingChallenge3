@@ -1,0 +1,19 @@
+function LongestWord(sen) { 
+let longest = 0;
+let word = " ";
+sen= sen.split(/\W+/);
+
+for (let i=0; i<sen.length; i++){
+   if (longest<sen[i].length){
+     longest=sen[i].length;
+     word=sen[i];
+   }
+}
+  return word; 
+}
+   
+// keep this function call here 
+console.log(LongestWord(readline()));
+//make string an array
+// for each item in list Compare it to the longest word count 
+// make the longer word longer word ect.
